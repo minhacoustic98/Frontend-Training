@@ -1,0 +1,490 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+@font-face{
+	src:url('../fonts/AvertaDemo-Regular.otf') format("truetype");
+	font-family: 'Averta';
+}
+
+body
+{
+	font-family: 'Averta';
+	font-size: 14px;
+	line-height: 1.5;
+
+}
+a{
+	transition: 0.5s all;
+}
+
+.header
+{
+	min-height: 120px;
+	background:#111111;
+	position: fixed;
+	z-index: 1;
+}
+
+li{
+	list-style: none;
+}
+
+
+a.brand
+{
+	display: block;
+	max-width: 221px;
+	padding-top: 10px;
+	padding-left: 40px;
+	cursor: pointer;
+}
+
+.topNav
+{
+	width: 100%;
+	
+}
+
+.topNav ul
+{
+	width: 100%;
+	overflow: hidden;
+}
+
+.topNav ul li
+{
+	list-style:none;
+	display: inline-block;
+	float: left;
+	max-height: 50px;
+	margin:35px 10px;
+	line-height: 50px;
+
+	
+}
+
+.topNav ul li a
+{
+	display: block;
+	text-decoration: none;
+	color:#fff;
+	text-transform: uppercase;
+border-radius: 4px;
+}
+
+.topNav .myBtn
+{
+	width: 170px;
+	height: 50px;
+	border-radius:40px;
+	line-height: 50px;
+	color:#fff;
+	font-weight: bold;
+	text-transform: uppercase;
+	background: rgb(253,156,123);
+background: linear-gradient(90deg, rgba(253,156,123,1) 0%, rgba(249,145,117,1) 47%, rgba(245,130,110,1) 74%, rgba(241,119,104,1) 100%);
+border:none;
+}
+
+
+
+.banner 
+{
+	background: url('../images/banner.png') no-repeat;
+	background-position: center center;
+	min-height: 270px;
+	position: relative;
+	z-index: -1;
+}
+
+.banner:before
+{
+content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(253,156,123);
+    background: linear-gradient(90deg, rgba(253,156,123,1) 0%, rgba(253,156,123,1) 50%, rgba(239,111,100,1) 100%);
+    position: absolute;
+    opacity: 0.55;
+}
+
+.text-inside
+{
+	position: absolute;
+    z-index: 0;
+    color: #fff;
+    left: 40%;
+    top: 65%;
+}
+
+.content
+{
+	padding-top: 100px;
+}
+
+.left a
+{
+	display: block;
+}
+.left img
+{
+	width: 100%;
+	height: auto;
+	cursor: pointer;
+}
+.header-text 
+{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.captain
+{
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.details-text
+{
+	color:#808080;
+	
+}
+.view
+{
+	display: block;
+	color:#ef6f64;
+}
+
+.right .myForm input
+{
+	width: 100%;
+	height: 31px;
+	border-top:none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 1px solid #eaeaea;
+	position: relative;
+}
+
+.inputs
+{
+	position: absolute;
+	top:5px;
+	right:5%;
+}
+
+
+.categories,.post
+{
+	border:1px solid #eaeaea;
+	margin-top:30px;
+	border-radius: 4px;
+}
+
+.category,.recent-post
+{
+	padding:30px;
+}
+
+.category ul li
+{
+	list-style: none;
+	display: block;
+	height: 31px
+	line-height:31px;
+	border-bottom: 1px solid #eaeaea;
+	margin-bottom: 15px;
+}
+
+.recent-post ul li
+{
+	list-style: none;
+	display: block;
+	height: 31px
+	line-height:31px;
+	border-bottom: 1px solid #eaeaea;
+	margin-bottom: 15px;
+}
+
+.category ul li:last-child
+{
+	border:0;
+}
+
+.recent-post ul li:last-child
+{
+	border:0;
+}
+.category ul li a
+{
+	text-decoration: none;
+	display: block;
+	color:#808080;
+
+}
+.recent-post ul li a
+{
+	text-decoration: none;
+	display: block;
+	color:#808080;
+}
+.category ul li:hover a
+{
+	color:#178de8;
+}
+
+.recent-post ul li:hover a
+{
+	color:#178de8;
+}
+
+.line
+{
+	height: 2px;
+	width: 38px;
+	background: #ef6f64;
+	margin-bottom: 30px;
+}
+
+.category ul li a:before
+{
+	content: '\2022';
+	font-size:20px;
+	color:#ef6f64;
+	top:0;
+	left: 0;
+	display: inline-block; 
+	font-weight: bold;
+	 width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left:1px;
+}
+.recent-post ul li a:before
+{
+	content: '\2022';
+	font-size:20px;
+	color:#ef6f64;
+	top:0;
+	left: 0;
+	display: inline-block; 
+	font-weight: bold;
+	 width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left:1px;
+}
+
+.hr-line
+{
+	width: 100%;
+	background: #cccccc;
+}
+
+.pagination
+{
+ margin-top: 30px;
+}
+.pagination ul li
+{
+	display: inline-block;
+	border-radius: 2px;
+	line-height: 35px;
+	height: 35px;
+	width: 37px;
+	border:1px solid #cccccc;
+	text-align: center;
+	margin-right:5px;
+}
+
+
+.pagination ul li:first-child
+{
+
+	width: 90px;
+
+}
+
+.pagination ul li:last-child
+{
+
+	width: 90px;
+	
+}
+
+
+.pagination ul li:nth-child(5)
+{
+   border:0;
+   width: 35px;
+}
+
+.pagination ul li:hover
+{
+	color:#fff;
+	background: #ef6f64;
+}
+
+.footer
+{
+	background: #111111;
+	color:#8d8d8d;
+
+}
+
+.foot
+{
+	padding-bottom: 30px;
+	padding-top:70px;
+}
+.capital
+{
+	text-transform: uppercase;
+}
+
+table tr td i
+{
+	vertical-align: top;
+}
+
+table tr td
+{
+	padding-bottom: 25px;
+}
+
+table .social-icon li
+{
+	list-style: none;
+	display:inline-block;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border:1px;
+	background: #2f2f2f;
+	position: relative;
+	margin-right: 5px;
+}
+
+table .social-icon li i
+{
+	position: absolute;
+	top:40%;
+	left:35%;
+}
+
+.footer a
+{
+	text-decoration: none;
+color:#8d8d8d;
+}
+
+.about-us,.support
+{
+	padding-top:60px;
+}
+
+.about-us ul,.support ul
+{
+	margin-top: 50px;
+}
+
+.about-us li,.support li
+{
+	line-height: 25px;
+	height: 25px;
+}
+
+.about-us a:before,.support a:before
+{
+
+	content: '\003e';
+	color:#fff;
+	font-size: 14px;
+	font-weight: bold;
+	display:inline-block;
+	margin-left: 1px;
+	width:1em;
+}
+
+.img-padding
+{
+	padding-right: 30px;
+}
+
+.scroll
+{
+	background: #563d7c;
+	color:white;
+	
+}
+
+
+
+@media only screen and (max-width:1370px) {
+  .myBtn
+  {
+  	display: none;
+  }
+}
+
+@media only screen and (max-width:992px) {
+  .menu-bars
+  {
+  	display: block;
+  }
+  
+
+  .logo a
+  {
+	margin:0 auto;
+  	text-align: center;
+  	cursor: pointer;
+  }
+
+ 
+
+  .show
+  {
+  	display: block;
+  }
+
+  .topNav ul li
+  {
+  	width: 100%;
+  	list-style:none;
+	display:block;
+	float: none;
+	max-height: 20px;
+	margin:20px 10px;
+	line-height: 20px;
+	
+  }
+
+  .topNav ul li a
+  {
+  	color:#fff;
+	text-align: center;
+	padding: 10px;
+  }
+
+  .right{
+  	display: none;
+  }
+
+}
+
+.hide{
+	display: none;
+}
+
+
+ .topNav ul li:hover a
+  {
+  	background: greenyellow;
+  }
+
+  @media only screen and (max-width:768px) {
+  .fb
+  {
+  	display: none;
+  }
+}
